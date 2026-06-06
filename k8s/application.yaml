@@ -8,7 +8,7 @@ spec:
   project: default
 
   source:
-    repoURL: https://github.com/sumonaust/GitOps-Image-Updater.git
+    repoURL: https://github.com/sumonaust/python-gitops.git
     targetRevision: main
     path: k8s
 
