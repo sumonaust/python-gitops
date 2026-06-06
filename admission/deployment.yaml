@@ -4,25 +4,25 @@ metadata:
   name: admissionpf
   namespace: python-app
 spec:
- replicas: 2
- selector:
-   matchLabels:
-     app: apfapp
- template:
-  metadata:
-   labels:
-     app: apfapp
-  spec:
-    imagePullSecrets:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: apfapp
+  template:
+    metadata:
+      labels:
+        app: apfapp
+    spec:
+      imagePullSecrets:
         - name: dockerhub-secret
-    containers:
-    - name: apfcontainer
-      image: sumonaust/admission:initial
-      imagePullPolicy: Always
-      ports:
-      - containerPort: 80
-      resources:
-        requests:
-          cpu: 100m
-        limits:
-          cpu: 300m
+      containers:
+        - name: apfcontainer
+          image: sumonaust/admission:6d22ea4
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 80
+          resources:
+            requests:
+              cpu: 100m
+            limits:
+              cpu: 300m
