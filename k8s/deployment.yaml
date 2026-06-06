@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: sumonaust/python-app:8702f45
+          image: sumonaust/python-app:6efe84a
           imagePullPolicy: Always
           ports:
             - containerPort: 5000
