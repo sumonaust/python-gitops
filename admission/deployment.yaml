@@ -17,7 +17,7 @@ spec:
         - name: dockerhub-secret
       containers:
         - name: apfcontainer
-          image: sumonaust/admission:d37b474
+          image: sumonaust/admission:b9c60e5
           imagePullPolicy: Always
           ports:
             - containerPort: 80
